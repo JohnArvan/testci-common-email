@@ -1,0 +1,11 @@
+name: mvn clean test
+
+on: push
+
+jobs: 
+  mvn-clean-test:
+    name: Mvn clean test
+    runs-on: windows-latest
+      steps:
+        - name: Mvn clean test
+        - run: mvn clean test
